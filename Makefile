@@ -6,3 +6,6 @@ zsh_setup:
 
 push_origin_master:
 	git push origin master
+
+uptodate:
+	git commit -am "UptoDate"
