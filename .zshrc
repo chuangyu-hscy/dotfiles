@@ -1,11 +1,14 @@
 export ZSH="/Users/huangsunchuangyu/.oh-my-zsh"
 export PATH="/Users/huangsunchuangyu/opt/anaconda3/bin:$PATH"
 
-# Customize Prompt (s) while powerlevel9k not installed yet
-PROMPT='
-%1~ %L %# '
+# synatx highliting for man pages
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-RPROMPT='%*'
+# Customize Prompt (s) while powerlevel9k not installed yet
+# PROMPT='
+# %1~ %L %# '
+#
+# RPROMPT='%*'
 
 #  POWERLEVEL9K Theme setting
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -43,6 +46,7 @@ alias doc='~/Documents' # director to the documents folder
 alias py=python3 # change the python version
 alias jl"jupter lab" # start jupter lab session
 alias szsh="source ~/.zshrc" # source .zshrc
+alias tree="exa -T" # show the file with a tree structure
 
 # function
 function mkcd() { # makde new directory(s) and change to the last one
