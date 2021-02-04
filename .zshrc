@@ -47,7 +47,7 @@ alias doc='~/Documents' # director to the documents folder
 alias py=python3 # change the python version
 alias jl"jupter lab" # start jupter lab session
 alias szsh="source ~/.zshrc" # source .zshrc
-alias tree="exa -T" # show the file with a tree structure
+alias tree="exa -lgbT" # show the file with a tree structure
 
 # function
 function mkcd() { # makde new directory(s) and change to the last one
@@ -59,7 +59,7 @@ cl # clear the prompt
 
 # cat << _EOF_
 # 	hello world, how you doing
-# 
+#
 #
 # 	bye
 # _EOF_
