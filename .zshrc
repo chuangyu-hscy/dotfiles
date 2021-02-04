@@ -1,5 +1,6 @@
 export ZSH="/Users/huangsunchuangyu/.oh-my-zsh"
 export PATH="/Users/huangsunchuangyu/opt/anaconda3/bin:$PATH"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin" # Add Visual Studio (code)
 
 # synatx highliting for man pages
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -55,3 +56,10 @@ function mkcd() { # makde new directory(s) and change to the last one
 
 source $ZSH/oh-my-zsh.sh
 cl # clear the prompt
+
+# cat << _EOF_
+# 	hello world, how you doing
+# 
+#
+# 	bye
+# _EOF_
