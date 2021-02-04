@@ -4,8 +4,8 @@ zsh_setup:
 	echo "Source .zshrc file Completed"
 	clear
 
-push_origin_master:
-	git push origin master
+pom:
+	git push https://github.com/chuangyu-hscy/dotfiles.git master
 
-uptodate:
+utd:
 	git commit -am "UptoDate"
