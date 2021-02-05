@@ -1,16 +1,16 @@
 " This vim configuration is built from Sunchuangyu Huang
-colorscheme Snazzy 
+colorscheme Snazzy
 let g:SnazzyTrasparent=1
 set pythondll=
 " -> Current Color scheme
-syntax enable
+syntax on
 
 set exrc
 set secure
 set colorcolumn=110
 " highlight ColorColumn ctermbg=darkgray
 
-" -> buffer setting for c 
+" -> buffer setting for c
 augroup project
     autocmd!
     autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
@@ -51,7 +51,7 @@ set tabstop=4
 set expandtab ts=4 sw=4 ai
 
 " -----------------------
-" Change default key binding 
+" Change default key binding
 " -----------------------
 noremap h i
 noremap i <nop>
@@ -153,6 +153,8 @@ au BufReadPost * if line ("'\"") > 1 && line ("'\"") <= line("$") | exe "normal!
 
 " NerdTree config
 map tt :NERDTreeToggle<CR>
+map <C-j> <C-w>j
+map <C-l> <C-w>l
 let NERDTreeMapOpenSplit="h"
 let NERDTreeMenuDown="i"
 let NERDTreeMenuUp="k"
@@ -209,11 +211,11 @@ nnoremap gt :YcmCompleter GetType<CR>
 nnoremap gr :YcmCompleter GoToReferences<CR>
 let g:ycm_autoclose_preview_window_after_completion=0
 let g:ycm_autoclose_preview_window_after_insertion=1
-let g:ycm_use_clangd=1 
+let g:ycm_use_clangd=1
 let g:ycm_python_interpreter_path = "/bin/python3"
 let g:ycm_python_binary_path = "/bin/python3"
 
-" language server setup 
+" language server setup
 if executable('ccls')
    au User lsp_setup call lsp#register_server({
       \ 'name': 'ccls',

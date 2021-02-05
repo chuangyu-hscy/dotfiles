@@ -45,7 +45,7 @@ alias cl='clear' # clean the terminal
 alias dk='~/Desktop' # direct to the desktop folder
 alias doc='~/Documents' # director to the documents folder
 alias py=python3 # change the python version
-alias jl"jupter lab" # start jupter lab session
+alias jl"jupyter lab" # start jupter lab session
 alias szsh="source ~/.zshrc" # source .zshrc
 alias tree="exa -lgbT" # show the file with a tree structure
 
@@ -63,3 +63,6 @@ cl # clear the prompt
 #
 # 	bye
 # _EOF_
+alias quit=exit
+alias tmux="TERM=screen-256color-bce tmux"
+alias "ls -lh"="exa -lh"
