@@ -104,7 +104,7 @@ map <Right> :vertical resize-5<CR>
 " -----------------------
 call plug#begin('-/.vim/plugged')
 Plug 'vim-airline/vim-airline'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'w0rp/ale'
 Plug 'majutsushi/tagbar', { 'on': 'TagbarOpenAutoClose' }
